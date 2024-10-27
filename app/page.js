@@ -1,14 +1,13 @@
-import './globals.css'
+import Header from "@/components/header";
+import Link  from "next/link";
 
-export const metadata = {
-  title: 'NextJS Course App',
-  description: 'Your first NextJS app!',
-};
-
-export default function RootLayout({ children }) {
+export default function Home() {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <main>
+      <Header />
+      <p>🔥 Let&apos;s get started! 🔥</p>
+      <Link href="/about">About Us</Link>
+
+    </main>
   );
 }
